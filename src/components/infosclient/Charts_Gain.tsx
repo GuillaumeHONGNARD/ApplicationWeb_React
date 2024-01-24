@@ -6,6 +6,8 @@ export const Charts_Gain = () => {
 
     return(
        <>
+
+
        </>
     )
 

@@ -12,7 +12,6 @@ export const MuiCardValue = (props:Props) => {
     const logo = require("../../images/image.jpg")
 
     return(
-
             <Card elevation={24} sx={{ width: 300 }}>
                 <CardMedia
                     sx={{ height: 140 }}
