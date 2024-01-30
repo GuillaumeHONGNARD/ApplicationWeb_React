@@ -15,7 +15,7 @@ import CheckIcon from '@mui/icons-material/Check';
 
 import 'dayjs/locale/fr';
 import {useAppStore} from "./Store";
-import { FormatageDate } from "../../helpers/FormatageDate";
+import { FormatageDate } from "../helpers/FormatageDate";
 
 
 export const MuiDateRange = () => {

@@ -1,7 +1,6 @@
 import {Stack} from "@mui/material";
 import {WebSocketValue} from "../../websocket/WebSocketValue";
 import React, {useState} from "react";
-import ModValue from "../../models/ModValue";
 import {WS_SERVER, WS_SERVER_CONFIG} from "../../websocket/paramsURL";
 import useWebSocket from "react-use-websocket";
 import ModId from "../../models/ModId";

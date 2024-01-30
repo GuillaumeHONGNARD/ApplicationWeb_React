@@ -1,7 +1,8 @@
 import ModValue from "../../models/ModValue";
 import React from "react";
-import {Box, Card, CardContent, CardMedia, Typography} from "@mui/material";
+import {Box, Card, CardContent, CardMedia, IconButton, Typography} from "@mui/material";
 import ModId from "../../models/ModId";
+import CheckIcon from "@mui/icons-material/Check";
 
 interface Props {
     valeurs:ModValue
@@ -30,6 +31,10 @@ export const MuiCardValue = (props:Props) => {
                     <Typography variant="body2" color="text.secondary">
                         Valeur 2 : {props.valeurs.val2}
                     </Typography>
+
+                    <IconButton aria-label={'valid'} color={'success'} size={'medium'}>
+                        <CheckIcon/>
+                    </IconButton>
 
                 </CardContent>
             </Card>

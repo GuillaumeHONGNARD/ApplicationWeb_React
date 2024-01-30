@@ -5,6 +5,8 @@ import {Home} from "./pages/Home";
 import PageNotFound from "./pages/page-not-found";
 import {InfosClient} from "./pages/InfosClient";
 
+import {Login} from "./connexionclient/Login";
+
 export const App = () => {
 
       return (
@@ -12,6 +14,8 @@ export const App = () => {
                 <Routes>
                     <Route path={'/'} element={<Home/>}/>
                     <Route path={'/infosClient'} element={<InfosClient/>}/>
+                    <Route path={'/login'} element={<Login/>}/>
+                    {/*<Route path={'/register'} element={<Register/>}/>*/}
                     <Route path={"/*"} element={<PageNotFound/>}/>
                 </Routes>
           </div>
