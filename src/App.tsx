@@ -6,6 +6,7 @@ import PageNotFound from "./pages/page-not-found";
 import {InfosClient} from "./pages/InfosClient";
 
 import {Login} from "./connexionclient/Login";
+import {FormulaireLogin} from "./connexionclient/FormulaireLogin";
 
 export const App = () => {
 
@@ -14,7 +15,7 @@ export const App = () => {
                 <Routes>
                     <Route path={'/'} element={<Home/>}/>
                     <Route path={'/infosClient'} element={<InfosClient/>}/>
-                    <Route path={'/login'} element={<Login/>}/>
+                    <Route path={'/login'} element={<FormulaireLogin/>}/>
                     {/*<Route path={'/register'} element={<Register/>}/>*/}
                     <Route path={"/*"} element={<PageNotFound/>}/>
                 </Routes>
