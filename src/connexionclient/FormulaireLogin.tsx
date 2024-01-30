@@ -1,12 +1,14 @@
 // https://www.youtube.com/watch?v=sD9fZxMO1us&list=PLC3y8-rFHvwjmgBr1327BA5bVXoQH-w5s&index=31
 // https://www.youtube.com/watch?v=u6PQ5xZAv7Q
 
-import {Box, Button, Card, CardContent, TextField} from "@mui/material";
+import {Avatar, Box, Button, Card, CardContent, TextField} from "@mui/material";
 // pour test
 // @ts-ignore
 //npm install -D @hookform/devtools
 import { DevTool } from '@hookform/devtools';
 import {useForm} from "react-hook-form";
+import {LockOutlined} from "@mui/icons-material";
+import React from "react";
 
 
 
@@ -44,7 +46,12 @@ export const FormulaireLogin = () => {
             <Card elevation={5}>
                 <CardContent>
                     <form autoComplete="off" onSubmit={handleSubmit(onSubmit)} noValidate>
-                        <h1>Formulaire de Connexion</h1>
+
+                        <Avatar sx={{ m: 1, bgcolor: "primary.light" ,mb:3}}  >
+                            <LockOutlined />
+                        </Avatar>
+
+                        <h1>Login</h1>
                         <TextField
                             required
                             label={'Email'}
